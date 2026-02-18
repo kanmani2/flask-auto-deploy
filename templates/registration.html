@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - Bangalore Throwball Premier League</title>
+    <link rel="stylesheet" href="form-styles.css">
+</head>
+<body>
+    <div class="form-container" id="registrationFormContainer">
+        <div class="form-header">
+            <div class="logo-left">
+                <img src="logo1.png" id="logo1Image" height="150px" width="150px" alt="BTPL Logo" class="logo-image">
+            </div>
+            <div class="form-title">
+                <h1>BANGALORE DISTRICT THROWBALL ASSOCIATION</h1>
+                <h2>&</h2>
+                <h2>YOUNGSTERS SPORTS CLUB</h2>
+                <p class="presents-tag">Presents</p>
+                <h2>BANGALORE THROWBALL PREMIER LEAGUE</h2>
+                <h3>SEASON - 1</h3>
+                <h4>REGISTRATION FORM</h4>
+            </div>
+            <div class="logo-right">
+                <img src="logo2.png" id="logo2Image" height="85px" width="85px" alt="YSC Logo" class="logo-image">
+            </div>
+        </div>
+
+        <form id="registrationForm" class="registration-form">
+            <div class="form-row">
+                <div class="form-group full-width-with-photo">
+                    <label for="firstName">First Name: <span class="required">*</span></label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="photo-upload">
+                    <label>Passport Size Photo <span class="required">*</span></label>
+                    <div class="photo-box" id="photoBox">
+                        <input type="file" id="photoInput" accept="image/*" style="display: none;">
+                        <span class="photo-placeholder">Click to upload</span>
+                        <img id="photoPreview" style="display: none;" alt="Preview">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="lastName">Last Name: <span class="required">*</span></label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone No: <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" required maxlength="10" placeholder="10 digits">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email Address: <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <label for="address">Residential Address: <span class="required">*</span></label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+            </div>
+
+            <div class="form-row two-col">
+                <div class="form-group">
+                    <label for="city">City: <span class="required">*</span></label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="pincode">Pin Code: <span class="required">*</span></label>
+                    <input type="text" id="pincode" name="pincode" required maxlength="6" placeholder="6 digits">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="state">State: <span class="required">*</span></label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+            </div>
+
+            <div class="player-type-section">
+                <h3>SELECT PLAYER TYPE <span class="required">*</span></h3>
+                
+                <div class="selection-row">
+                    <div class="selection-group">
+                        <h4>HANDED:</h4>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="radio" name="handed" value="RIGHT" required>
+                                <span class="checkbox-custom"></span>
+                                RIGHT
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="radio" name="handed" value="LEFT">
+                                <span class="checkbox-custom"></span>
+                                LEFT
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="selection-group">
+                        <h4>SPECIALIST IN:</h4>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="radio" name="specialist" value="OFFENSIVE" required>
+                                <span class="checkbox-custom"></span>
+                                OFFENSIVE
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="radio" name="specialist" value="DEFENSIVE">
+                                <span class="checkbox-custom"></span>
+                                DEFENSIVE
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="radio" name="specialist" value="BOTH">
+                                <span class="checkbox-custom"></span>
+                                BOTH
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <label for="achievement">Achievement In Throwball:</label>
+                    <textarea id="achievement" name="achievement" rows="5" required ></textarea>
+                </div>
+            </div>
+
+            <div class="jersey-size-section">
+                <h4>Jersey Size: <span class="required">*</span></h4>
+                <div class="size-options">
+                    <label class="size-label">
+                        <input type="radio" name="jerseySize" value="36" required>
+                        <span class="size-box">36</span>
+                    </label>
+                    <label class="size-label">
+                        <input type="radio" name="jerseySize" value="38">
+                        <span class="size-box">38</span>
+                    </label>
+                    <label class="size-label">
+                        <input type="radio" name="jerseySize" value="40">
+                        <span class="size-box">40</span>
+                    </label>
+                    <label class="size-label">
+                        <input type="radio" name="jerseySize" value="42">
+                        <span class="size-box">42</span>
+                    </label>
+                    <label class="size-label">
+                        <input type="radio" name="jerseySize" value="44">
+                        <span class="size-box">44</span>
+                    </label>
+                    <label class="size-label">
+                        <input type="radio" name="jerseySize" value="46">
+                        <span class="size-box">46</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="entry-fee-box">
+                <h3>ENTRY FEE:</h3>
+                <p class="fee-amount">₹ 1,000/- PER PERSON</p>
+            </div>
+
+            <div class="signature-section">
+                <h4>Signature: <span class="required">*</span></h4>
+                <p class="signature-instruction">Please sign in the box below</p>
+                <div class="signature-container">
+                    <canvas id="signatureCanvas"></canvas>
+                    <div class="signature-actions">
+                        <button type="button" class="clear-signature-btn" id="clearSignature">
+                            <span>🗑️</span> Clear Signature
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-footer">
+                <ul class="footer-points">
+                    <li>➤ Jersey, Shorts & Food Will Be Provided For All The Participants.</li>
+                    <li>➤ Last Date For The Registration: 01-04-2026</li>
+                    <li>➤ Kindly Send Your Registration Form Through Mail Or Post For The Following Address</li>
+                </ul>
+                
+                <div class="contact-details">
+                    <p><strong>Mail Id:</strong> kanmani3153@gmail.com</p>
+                    <p><strong>Address:</strong> Room #51, Sree Kanteerava Outdoor Stadium, Bengaluru - 560001</p>
+                </div>
+
+                <div class="form-bottom">
+                    <div class="contact-info">
+                        <p><strong>For More Details Kindly Contact:</strong> 9972888592 / 9916659636</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">
+                    <span class="btn-icon">📝</span>
+                    Submit Registration
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="success-modal">
+        <div class="success-modal-content">
+            <div class="success-icon">✅</div>
+            <h2>Registration Successful!</h2>
+            <p>Thank you for registering for the Bangalore Throwball Premier League Season 1!</p>
+            <div class="registration-id">
+                <strong>Registration ID:</strong> <span id="regId"></span>
+            </div>
+            <div class="success-actions">
+                <button id="downloadPdfBtn" class="download-btn">
+                    <span class="btn-icon">📥</span>
+                    Download Registration Form (PDF)
+                </button>
+                <button id="closeSuccessModal" class="close-modal-btn">Close</button>
+            </div>
+            <div class="next-steps">
+                <h3>Next Steps:</h3>
+                <ul>
+                    <li>✓ Check your email for confirmation</li>
+                    <li>✓ Send the downloaded PDF to: kanmani3153@gmail.com</li>
+                    <li>✓ Complete payment of ₹1,000/-</li>
+                    <li>✓ Contact us for any queries: 9972888592 / 9916659636</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- jsPDF Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="form-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore Throwball Premier League | YSC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='logo1.png') }}" alt="YSC Logo" class="logo-image">
+                <div class="logo-text">
+                    <h1>BANGALORE DISTRICT THROWBALL ASSOCIATION</h1>
+                    <h3>Youngsters Sports Club</h3>
+                    <span class="presents">Presents</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#tournaments" class="nav-link">Tournaments</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">SEASON 1 • 2026</div>
+            <h1 class="hero-title">Bangalore Throwball Premier League</h1>
+            <p class="hero-subtitle">Where Champions Rise • Excellence Begins</p>
+            <div class="hero-buttons">
+                <a href="#register" class="btn btn-primary">Register Now</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About YSC</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Youngsters Sports Club (YSC) Bangalore is dedicated to promoting throwball as a competitive sport in Karnataka. We organize premier tournaments that bring together talented players from across the region.</p>
+                    <p>Our mission is to provide a platform for athletes to showcase their skills, develop sportsmanship, and compete at the highest level. Join us in celebrating the spirit of throwball!</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Professional Tournaments</h3>
+                        <p>Organized competitions with certified officials and world-class facilities</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Team Building</h3>
+                        <p>Connect with players and form lasting teams across Bangalore</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Skill Development</h3>
+                        <p>Improve your game through high-level competition and training</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournaments Section -->
+    <section id="tournaments" class="tournaments">
+        <div class="container">
+            <h2 class="section-title">Upcoming Tournaments</h2>
+            <div class="tournament-grid">
+                <div class="tournament-card">
+                    <div class="tournament-header">
+                        <h3>Bangalore Throwball Premier League</h3>
+                        <span class="tournament-badge">Season 1</span>
+                    </div>
+                    <div class="tournament-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">👫</span>
+                            <div>
+                                <strong>Category:</strong>
+                                <p>Men & Women</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">💰</span>
+                            <div>
+                                <strong>Entry Fee:</strong>
+                                <p>₹1,000 per person</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📅</span>
+                            <div>
+                                <strong>Registration Deadline:</strong>
+                                <p>01-04-2026</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🎁</span>
+                            <div>
+                                <strong>Includes:</strong>
+                                <p>Jersey, Shorts & Food</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#register" class="btn btn-primary btn-full">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/Tournament Action.jpeg') }}" alt="Tournament Action">
+                    <div class="gallery-overlay">
+                        <span>🏐 Tournament Action</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/Team Spirit.jpeg') }}" alt="Team Spirit">
+                    <div class="gallery-overlay">
+                        <span>🤝 Team Spirit</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/victory.jpeg') }}" alt="Victory Moments">
+                    <div class="gallery-overlay">
+                        <span>🎉 Victory Moments</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="{{ url_for('static', filename='images/champions.jpeg') }}" alt="Champions">
+                    <div class="gallery-overlay">
+                        <span>👑 Champions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="register">
+        <div class="container">
+            <h2 class="section-title">Register for Tournament</h2>
+            <div class="register-intro">
+                <p>Join the Bangalore Throwball Premier League Season 1! Fill out the form below to secure your spot in Karnataka's premier throwball tournament.</p>
+            </div>
+            <button class="btn btn-large btn-primary" id="openFormBtn">Open Registration Form</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📍 Address</h3>
+                        <p>Room #51, Sree Kanteerava Outdoor Stadium<br>Bengaluru - 560001, Karnataka</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p>9972888592</p>
+                        <p>9916659636</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <a href="mailto:Info.youngsterssportsclub@gmail.com">Info.youngsterssportsclub@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bangalore Throwball Premier League</h3>
+                    <h5>Youngsters Sports Club Presents</h5>
+                    <p>Promoting throwball excellence in Karnataka since 2024</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#tournaments">Tournaments</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="https://www.instagram.com/throwballpremierleague_blr?igsh=aG9jYnB5cGUyZHFx" class="social-icon">Instagram</a>
+                        <a href="https://x.com/BTPL_Official" class="social-icon">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bangalore Throwball Premier League - YSC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Form Modal -->
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="registration-form-wrapper">
+                <iframe src="{{ url_for('registration') }}" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
